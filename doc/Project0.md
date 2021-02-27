@@ -149,7 +149,7 @@ Boot up QEMU again, and you will find your executable inside `/root`!
 
 ## Submission
 
-Take a screenshot of your test binary working and send it to [osspr2021@gmail.com](mailto:osspr2021@gmail.com). The title should obey the format "[Project 0] <studen_id> <name>", and the screenshot should look like this:
+Take a screenshot of your test binary working and send it to [osspr2021@gmail.com](mailto:osspr2021@gmail.com). The title should obey the format "[Project 0] <student_id> <name>", and the screenshot should look like this:
 ![screenshot_syshello](/doc/assets/syshello_example.png)
 
 Be aware that the deadline is hard - we accept no more submissions after the deadline.
