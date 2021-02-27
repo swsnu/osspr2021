@@ -26,4 +26,4 @@ Jaewon Chung:
 
 Woosuk Kwon:
   - Office: Bldg. 301, S-lab
-  - **FILL ME**
+  - Thu 3:30-4:30PM
