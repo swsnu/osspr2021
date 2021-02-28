@@ -16,6 +16,7 @@
   - Tue/Thu 4-5PM, by appointment
   
 **TAs**:
+
 Chaehyun Jeong:
   - Office: Bldg. 301, S-lab
   - Tue 4-5PM
