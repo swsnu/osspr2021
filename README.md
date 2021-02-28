@@ -13,7 +13,7 @@
 ## Office Hours
 **Professor** :
   - Office: Bldg. 302, Rm. 322
-  - **FILL ME** , by appointment
+  - Tue/Thu 4-5PM, by appointment
   
 **TAs**:
 Chaehyun Jeong:
