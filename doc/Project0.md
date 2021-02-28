@@ -6,13 +6,13 @@
 
 ## Introduction
 
-Project 0 will get you started with Linux kernel development. The project is consisted of two parts: 1) understanding how to build the kernel from its source code and boot the QEMU emulator, and 2) implementing a very simple system call. After this project, you will get ready to dive into the kernel world!
+Project 0 will get you started with Linux kernel development. The project consists of two parts: 1) understanding how to build the kernel from its source code and boot the QEMU emulator, and 2) implementing a very simple system call. After this project, you will get ready to dive into the kernel world!
 
-This is an individual project. Read this document carefully and follow the instructions. Setting up the environment may not be a trivial task, so we suggest that you start early. For project 0 only, you will submit a screenshot of your terminal and submit via email ([osspr2021@gmail.com](mailto:osspr2021@gmail.com)).
+This is an individual project. Read this document carefully and follow the instructions. Setting up the environment may not be a trivial task, so we suggest that you start early. For project 0 only, you will submit a screenshot of your terminal via email ([osspr2021@gmail.com](mailto:osspr2021@gmail.com)).
 
 ## Development Environment
 
-To build the kernel, you should setup the development environment. We strongly recommend you to work on native Ubuntu 20.04 instead of other operating systems such as Windows or MacOS. If you report issues on non-Ubuntu systems, the TAs will NOT actively help you resolve it. You can install Ubuntu side-by-side with an existing OS on your machine (See the official [installation guide](https://help.ubuntu.com/lts/installation-guide/amd64/index.html) and the [Windows dual-booting guide](https://help.ubuntu.com/community/WindowsDualBoot)).
+To build the kernel, you should setup the development environment. We strongly recommend you to work on native Ubuntu 18.04 or 20.04 instead of other operating systems such as Windows or macOS. If you have troubles with on non-Ubuntu systems, the TAs CANNOT actively help you resolve it. You can install Ubuntu side-by-side with the existing OS on your machine (See the official [installation guide](https://help.ubuntu.com/lts/installation-guide/amd64/index.html) and the [Windows dual-booting guide](https://help.ubuntu.com/community/WindowsDualBoot)).
 
 ### Setup on Ubuntu 20.04
 
@@ -50,7 +50,7 @@ and just type
 ```
 to compile the kernel. The first compilation will take around five to twenty minutes, differing based on your machine's performance. Re-compiling after modifying the source will not take this long thanks to caching.
 
-### Make Tizen images
+### Make Tizen Images
 
 First, we will create kernel-related images (the boot image and kernel modules) to feed into our QEMU emulator. The following script helps you create the images from the compilation artifacts. 
 ```bash
@@ -136,7 +136,7 @@ mkdir mntdir
 sudo mount tizen-image/rootfs.img ./mntdir
 ```
 
-This command mounts the Tizen root file system image to the directory named `mntdir/`. If you list the contents in `mntdir/`, you can see that the it is a subset of what you can find in the root directory inside QEMU.
+This command mounts the Tizen root file system image to the directory named `mntdir/`. If you list the contents in `mntdir/`, you can see that it is a subset of what you can find in the root directory inside QEMU.
 
 Copy your test binary into the `root` directory under `mntdir/`, and then unmount `mntdir/`. 
 ```bash
@@ -149,13 +149,14 @@ Boot up QEMU again, and you will find your executable inside `/root`!
 
 ## Submission
 
-Take a screenshot of your test binary working and send it to [osspr2021@gmail.com](mailto:osspr2021@gmail.com). The title should obey the format "[Project 0] <student_id> <name>", and the screenshot should look like this:
+Take a screenshot of your test binary working and send it to [osspr2021@gmail.com](mailto:osspr2021@gmail.com). The title should follow the format "[Project 0] <student_id> <name>", and the screenshot should look like this:
 ![screenshot_syshello](/doc/assets/syshello_example.png)
 
-Be aware that the deadline is hard - we accept no more submissions after the deadline.
+Please keep in mind that **2021-03-15 Monday 20:59:59 KST** is the strict deadline - we never accept the submissions after the deadline.
+
 
 ## We're Here to Help You
 
-Any troubles? Discussions on [issue board](https://github.com/swsnu/osspr2021/issues) is more than welcome. Remember, we are here to help you.
+Any troubles? Discussions on [issue board](https://github.com/swsnu/osspr2021/issues) are more than welcome. Remember, we are here to help you!
 
 Start early, ask for help if needed, and most importantly, have fun!
