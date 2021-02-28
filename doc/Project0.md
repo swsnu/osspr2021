@@ -14,7 +14,7 @@ This is an individual project. Read this document carefully and follow the instr
 
 To build the kernel, you should setup the development environment. We strongly recommend you to work on native Ubuntu 18.04 or 20.04 instead of other operating systems such as Windows or macOS. If you have troubles with on non-Ubuntu systems, the TAs CANNOT actively help you resolve it. You can install Ubuntu side-by-side with the existing OS on your machine (See the official [installation guide](https://help.ubuntu.com/lts/installation-guide/amd64/index.html) and the [Windows dual-booting guide](https://help.ubuntu.com/community/WindowsDualBoot)).
 
-### Setup on Ubuntu 20.04
+### Setup on Ubuntu 20.04 (or 18.04)
 
 Install necessary tools:
 ```bash
