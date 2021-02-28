@@ -80,10 +80,16 @@ For your convenience, we provide you with a shell script named `setup-images.sh`
 ### Boot the kernel with QEMU
 
 The next step is to boot the kernel image using QEMU. QEMU is a full-system emulator and we can run a variety of guest operating systems on it. 
+We found out that old versions of QEMU sometimes fails on booting, so we highly recommend you to get the latest version (QEMU 5.2.0) by following below instructions. 
 
-To install QEMU, just type
 ```bash
-sudo apt-get install qemu-system-aarch64
+sudo apt-get install libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev ninja-build -y
+curl -LO download.qemu.org/qemu-5.2.0.tar.xz
+tar xJf qemu-5.2.0.tar.xz
+cd qemu-5.2.0
+./configure --target-list=aarch64-softmmu
+make -j$(nproc)
+export PATH="$(pwd)/build:$PATH"
 ```
 
 Then run the following script.
