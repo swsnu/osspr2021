@@ -35,6 +35,8 @@ Now it's time to actually have our operating system running!
 
 Follow the Github classroom assignment invitation link we gave you for project 0. You will be asked to select your student id from the list, and tie your Github account to the id. This identification process is only needed on project 0. Once you identify yourself, you will be prompted to accept the assignment invitation. When you accept the invitation, your own private assignment repository will be created from the kernel source repository we prepared.
 
+If you cannot find your student id on the identifier list, please send us email. **Do NOT click `Skip to the next step` button at the invitation page.**
+
 Clone your assignment repository with `git clone`.
 
 ### Compile the Kernel
