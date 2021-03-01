@@ -1,4 +1,4 @@
-# Project 0
+# Project 0: Hello, System Call!
 
 
 * Assigned: 2021-03-02 Tuesday 17:00:00 KST
