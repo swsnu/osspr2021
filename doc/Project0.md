@@ -43,7 +43,7 @@ Clone your assignment repository with `git clone`.
 
 Walk into the kernel source.
 ```bash
-cd project-0-hello-linux-<username>
+cd project-0-hello-system-call-<username>
 ```
 
 and just type
