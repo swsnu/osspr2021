@@ -1,0 +1,13 @@
+diff --git a/build-rpi3.sh b/build-rpi3.sh
+index 0690115fc..4879d055d 100755
+--- a/build-rpi3.sh
++++ b/build-rpi3.sh
+@@ -14,7 +14,7 @@ type ccache
+ # Some cleanups and setups
+ rm -f arch/arm64/boot/Image
+ rm -f arch/arm64/boot/dts/broadcom/*.dtb
+-CROSS_COMPILER=aarch64-linux-gnu-
++CROSS_COMPILER='ccache aarch64-linux-gnu-'
+ 
+ # Build .config
+ make ARCH=arm64 CROSS_COMPILE="$CROSS_COMPILER" tizen_bcmrpi3_defconfig
