@@ -155,6 +155,16 @@ rmdir mntdir
 You will see nothing inside `mntdir/` after unmounting. Now, `rootfs.img` contains our test executable.
 Boot up QEMU again, and you will find your executable inside `/root`!
 
+## Demo
+
+We've created a short demo that walks you through the setup process. You can copy text directly from these demos (Asciinema is great!).
+- Ubuntu 18.04: [https://asciinema.org/a/jbnD7iyz34f1UoF9UaDYxc5T3](https://asciinema.org/a/jbnD7iyz34f1UoF9UaDYxc5T3)
+- Ubuntu 20.04: [https://asciinema.org/a/ruGNu9GWwvSuhaFf38vJr6CkQ](https://asciinema.org/a/ruGNu9GWwvSuhaFf38vJr6CkQ)
+
+The two are basically the same. We just filmed this while checking the compatibility of our setup guide with the two operating systems.
+
+You might benefit from these if you lack knowledge about the abbreviated stuff between steps in this documentation, or if you want to check if a certain error or warning message can be safely ignored.
+
 ## Submission
 
 Take a screenshot of your test binary working and send it to [osspr2021@gmail.com](mailto:osspr2021@gmail.com). The title should follow the format "[Project 0] <student_id> <name>", and the screenshot should look like this:
