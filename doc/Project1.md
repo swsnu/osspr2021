@@ -1,4 +1,4 @@
-# Project 1
+# Project 1: Hello, Process!
 
 * Assigned: 2021-03-09 Tuesday 17:00:00 KST
 * **Due: 2021-03-22 Monday 20:59:59 KST**
