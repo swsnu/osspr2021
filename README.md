@@ -9,7 +9,7 @@
 ## Projects
 
 * [Project 0: Hello, System Call!](/doc/Project0.md)
-* [Project 1](/doc/Project1.md)
+* [Project 1: Hello, Process!](/doc/Project1.md)
 
 ## Office Hours
 **Professor** :
