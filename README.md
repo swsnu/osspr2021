@@ -10,6 +10,7 @@
 
 * [Project 0: Hello, System Call!](/doc/Project0.md)
 * [Project 1: Hello, Process!](/doc/Project1.md)
+* [Project 2: Hello, Synchronization!](/doc/Project2.md)
 
 ## Office Hours
 **Professor** :
