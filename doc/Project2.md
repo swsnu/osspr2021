@@ -1,7 +1,7 @@
 # Project 2: Hello, Synchronization!
 
 * Assigned: 2021-03-23 Tuesday 17:00:00 KST
-* Design Review Due: 2021-04-02 Friday
+* Design Review Due: 2021-04-05 Monday
 * **Due: 2021-04-12 Monday 20:59:59 KST**
 
 
