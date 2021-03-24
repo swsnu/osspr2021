@@ -160,7 +160,7 @@ long rotation_unlock(long id);
 ```
 
 A process can revoke its own access rights by calling `rotation_unlock` with the ID returned by the call to `rotation_lock`.
-Unlike `rotation_lock`, processes may revoke their access rights any time regardless of the device's current orientation, and thus the call to `rotation_unlock` will be never blocked.
+Unlike `rotation_lock`, processes may revoke their access rights any time regardless of the device's current orientation, and thus the call to `rotation_unlock` will never block.
 Also, a process may only revoke access rights that it owns.
 If a process calls `rotation_unlock` with an ID that it does not own, the system call should abort and return `-EPERM`.
 
@@ -233,11 +233,11 @@ For example, it might be a good idea to keep a list of access requests and imple
 
 There are many different ways to block processes.
 You can use mutexes (`linux/mutex.h`) or semaphores (`linux/semaphore.h`).
-If you are brave enough, you can choose to work at the level of wait queues using either the associated low-level routines such as add_wait_queue(), remove_wait_queue(), or the higher-level routines such as prepare_to_wait(), finish_wait().
+If you are brave enough, you can choose to work at the level of wait queues using either the associated low-level routines such as `add_wait_queue()`, `remove_wait_queue()`, or the higher-level routines such as `prepare_to_wait()`, `finish_wait()`.
 You can find code examples both in the book (pages 58 - 61 of Linux Kernel Development) and in the kernel.
 
 Finally, but most importantly, make sure to correctly synchronize accesses to your internal data structures.
-Remember, we're working on a multiprocessor machine, and races will always happen.
+Remember, we're working on a multicore machine, and races will always happen.
 
 
 ## Test your rotation lock implementation (10 pts.)
