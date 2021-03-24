@@ -290,6 +290,9 @@ Your screen should look like the following:
   ...
   ```
 
+Here, you should understand that the `professor` and `student`s agree to synchronize their access to `quiz`, the protected object, with the rotation range [0, 180].
+This should be perceived as an **agreement** between `professor` and `student`s, just as if how threads agree to first `acquire` a shared mutex before executing the critical section and `release` it when they're done.
+
 We recommend that you use `tmux` to run these test binaries.
 Refer to [this issue](https://github.com/swsnu/osspr2021/issues/29) for instructions on how to install `tmux`.
 First of all, run the rotation daemon.
