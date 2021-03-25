@@ -140,8 +140,8 @@ long rotation_lock(int low, int high, int type);
 
 Processes are granted the `type` of access they requested when:
 
-1) granting access still meets the range-based readers-writer lock condition stated above, and
-2) the device's current orientation is within [`low`, `high`].
+- granting access still meets the range-based readers-writer lock condition stated above, and
+- the device's current orientation is within [`low`, `high`].
 
 The caller of `rotation_lock` is **blocked** until these conditions are met.
 Also, the access granted is **not** taken away even when the device's current orientation moves out of the specified range.
