@@ -1,0 +1,25 @@
+diff --git a/include/uapi/linux/sched.h b/include/uapi/linux/sched.h
+index 22627f800..ef0a8cb0f 100644
+--- a/include/uapi/linux/sched.h
++++ b/include/uapi/linux/sched.h
+@@ -40,6 +40,7 @@
+ /* SCHED_ISO: reserved but not implemented yet */
+ #define SCHED_IDLE		5
+ #define SCHED_DEADLINE		6
++#define SCHED_WRR		7
+ 
+ /* Can be ORed in to make sure the process is reverted back to SCHED_NORMAL on fork */
+ #define SCHED_RESET_ON_FORK     0x40000000
+diff --git a/kernel/sched/core.c b/kernel/sched/core.c
+index 6859ea1d5..eebaba4a0 100644
+--- a/kernel/sched/core.c
++++ b/kernel/sched/core.c
+@@ -4359,6 +4359,8 @@ change:
+ static int _sched_setscheduler(struct task_struct *p, int policy,
+ 			       const struct sched_param *param, bool check)
+ {
++	if (fair_policy(policy)) policy = SCHED_WRR;
++
+ 	struct sched_attr attr = {
+ 		.sched_policy   = policy,
+ 		.sched_priority = param->sched_priority,
