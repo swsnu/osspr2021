@@ -181,6 +181,22 @@ We expect that most of the teams will get full credit.
 Do not spend too much time in code refactoring for obtaining the points.
 
 
+## Extra Problem for Teams of 4
+## 4. Propose your ideas to improve the WRR scheduler (10 pts.)
+
+
+While implementing the WRR scheduler and running test programs, you may have found some points where the WRR scheduler works inefficiently or unfairly.
+Describe **at least three** problems you have found and explain your solutions to them in `EXTRA.md`.
+*For these problems, you do NOT need to actually implement the solutions.*
+Instead, sketch your ideas in detail (e.g., how you will alter specific data structures or scheduling algorithms to resolve each problem).
+
+Obviously, this is an open question.
+We want you to investigate how existing schedulers address similar problems and formulate creative answers.
+
+**Note that this question is only assigned to teams with 4 members.
+To these teams, the total score will be (the sum of the scores obtained from the four problems) * 75/85.**
+
+
 ## Tips - use debugfs to debug your scheduler
 
 In this project, [debugfs](https://www.kernel.org/doc/Documentation/filesystems/debugfs.txt) will be a great tool for your debugging.
