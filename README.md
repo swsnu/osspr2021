@@ -12,7 +12,7 @@
 * [Project 1: Hello, Process!](/doc/Project1.md)
 * [Project 2: Hello, Synchronization!](/doc/Project2.md)
 * [Project 3: Hello, Scheduler!](/doc/Project3.md)
-* [Project 3: Hello, File System!](/doc/Project4.md)
+* [Project 4: Hello, File System!](/doc/Project4.md)
 
 ## Office Hours
 **Professor** :
