@@ -139,7 +139,7 @@ In order to retrieve the location information of a file, write a new system call
  *
  * Returns:
  *    Zero on success
- *   -EINVAL if one of the argument is NULL or its attributes are invalid.
+ *   -EINVAL if one of the argument is NULL.
  *   -EFAULT if loc is outside the accessible address space.
  *   -ENOENT if there is not file or directory named with pathname
  *   -EACCES if the file not is readable by the current user.
